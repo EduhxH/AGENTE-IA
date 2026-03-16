@@ -1,21 +1,25 @@
 🧠 Meu Agente de IA (Chat RAG Local)
+
 Criei este projeto como um laboratório pessoal. O meu principal objetivo foi mergulhar de cabeça no mundo dos LLMs (Large Language Models) e entender como o RAG (Retrieval-Augmented Generation) funciona na prática.
 Mais do que apenas um chat, este projeto foi a minha forma de aprender a conectar inteligência artificial com dados reais, mantendo tudo rodando localmente para entender cada etapa do processo — desde a vetorização de documentos até a interface final.
 
 
 ✨ O que ele faz?
+
 Conversa com Contexto: Ele não chuta respostas; ele consulta a base de dados vetorial (ChromaDB) que eu criei.
 Interface de Chat: Usei o Streamlit pra criar uma experiência parecida com o ChatGPT, com histórico de mensagens e tudo mais.
 Privacidade Total: Como o "cérebro" é o Ollama (llama3.2), nada vai pra nuvem. Tudo fica na minha máquina.
 
 
 🛠️ O que tem "debaixo do capô"
+
 Streamlit: Pra interface web bonitona e fácil de usar.
 Ollama (llama3.2 & nomic-embed-text): Os modelos que pensam e processam os textos.
 LangChain + Chroma: A estrutura que conecta os PDFs à inteligência da IA.
 
 
 🚀 Como rodar aí na sua máquina
+
 Primeiro, você precisa ter o Ollama instalado e os modelos baixados (ollama pull llama3.2 e ollama pull nomic-embed-text).
 Instale as bibliotecas:
 bash
@@ -30,7 +34,8 @@ streamlit run app.py
 Use o código com cuidado.
 
 
-📝 Notas de quem fez
+📝 Notas:
+
 Este projeto foi um baita aprendizado sobre como unir uma interface web com modelos de linguagem locais. O próximo passo? Talvez colocar um botão pra fazer o upload de novos PDFs direto pela tela do chat! 🚀
 
 
