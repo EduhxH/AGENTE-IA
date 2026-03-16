@@ -1,5 +1,6 @@
 🧠 Meu Agente de IA (Chat RAG Local)
-Criei esse projeto porque queria um assistente que realmente conhecesse meus documentos, mas sem que meus dados saíssem do meu computador. É um chat inteligente que usa RAG (Retrieval-Augmented Generation) pra responder dúvidas com base nos meus próprios arquivos, rodando 100% offline.
+Criei este projeto como um laboratório pessoal. O meu principal objetivo foi mergulhar de cabeça no mundo dos LLMs (Large Language Models) e entender como o RAG (Retrieval-Augmented Generation) funciona na prática.
+Mais do que apenas um chat, este projeto foi a minha forma de aprender a conectar inteligência artificial com dados reais, mantendo tudo rodando localmente para entender cada etapa do processo — desde a vetorização de documentos até a interface final.
 
 
 ✨ O que ele faz?
