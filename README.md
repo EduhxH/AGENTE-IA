@@ -32,3 +32,24 @@ Use o código com cuidado.
 
 📝 Notas de quem fez
 Este projeto foi um baita aprendizado sobre como unir uma interface web com modelos de linguagem locais. O próximo passo? Talvez colocar um botão pra fazer o upload de novos PDFs direto pela tela do chat! 🚀
+
+
+<img width="1146" height="645" alt="image" src="https://github.com/user-attachments/assets/91887f90-40de-4637-beae-265e3e88d074" />
+<img width="1146" height="645" alt="image" src="https://github.com/user-attachments/assets/91887f90-40de-4637-beae-265e3e88d074" />
+(Ollama)
+
+<img width="1600" height="936" alt="image" src="https://github.com/user-attachments/assets/fa4e201b-3c12-4bc5-a963-cc5b7aa97192" />
+<img width="1600" height="936" alt="image" src="https://github.com/user-attachments/assets/fa4e201b-3c12-4bc5-a963-cc5b7aa97192" />
+(Streamlit)
+
+<img width="960" height="960" alt="image" src="https://github.com/user-attachments/assets/3f316e02-7c36-4659-8afa-034a0ee6633b" />
+<img width="960" height="960" alt="image" src="https://github.com/user-attachments/assets/3f316e02-7c36-4659-8afa-034a0ee6633b" />
+(Python)
+
+<img width="1400" height="733" alt="image" src="https://github.com/user-attachments/assets/3d4fd3aa-9239-4980-9622-28d0fa4efc93" />
+<img width="1400" height="733" alt="image" src="https://github.com/user-attachments/assets/3d4fd3aa-9239-4980-9622-28d0fa4efc93" />
+(langchain)
+
+
+
+
