@@ -53,18 +53,23 @@ streamlit run app.py
 Nota: Certifica-te de que o terminal está na pasta correta (onde o app.py reside) para que as dependências e o banco de dados sejam carregados corretamente.
 
 <img width="787" height="383" alt="image" src="https://github.com/user-attachments/assets/ff6991ba-82fb-40fe-baf8-3c66d02ee3c6" /> 
+
 (print do agente de IA)
 
 <img width="1146" height="645" alt="image" src="https://github.com/user-attachments/assets/91887f90-40de-4637-beae-265e3e88d074" />
+
 (Ollama)
 
 <img width="1600" height="936" alt="image" src="https://github.com/user-attachments/assets/fa4e201b-3c12-4bc5-a963-cc5b7aa97192" />
+
 (Streamlit)
 
 <img width="960" height="960" alt="image" src="https://github.com/user-attachments/assets/3f316e02-7c36-4659-8afa-034a0ee6633b" />
+
 (Python)
 
 <img width="1400" height="733" alt="image" src="https://github.com/user-attachments/assets/3d4fd3aa-9239-4980-9622-28d0fa4efc93" />
+
 (langchain)
 
 
