@@ -38,6 +38,22 @@ Use o código com cuidado.
 
 Este projeto foi um baita aprendizado sobre como unir uma interface web com modelos de linguagem locais. O próximo passo? Talvez colocar um botão pra fazer o upload de novos PDFs direto pela tela do chat! 🚀
 
+👍LEIA CASO TENHAM PROBLEMAS:
+
+É comum que as vezes dê erro no streamlit, no qual o programa não executa pois não consegue achar o ficheiro app.py ou a pasta da db, para isso deve se seguir os seguintes passos:
+
+1- Acede à pasta do script:
+Navega até ao diretório onde o ficheiro principal está localizado:
+cd RAG/gabarito
+
+2- Inicia o Streamlit:
+Executa o comando abaixo para abrir a aplicação no teu navegador:
+streamlit run app.py
+
+Nota: Certifica-te de que o terminal está na pasta correta (onde o app.py reside) para que as dependências e o banco de dados sejam carregados corretamente.
+
+<img width="787" height="383" alt="image" src="https://github.com/user-attachments/assets/ff6991ba-82fb-40fe-baf8-3c66d02ee3c6" />
+(print do agente de IA)
 
 <img width="1146" height="645" alt="image" src="https://github.com/user-attachments/assets/91887f90-40de-4637-beae-265e3e88d074" />
 (Ollama)
