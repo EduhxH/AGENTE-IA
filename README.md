@@ -1,6 +1,6 @@
 # 🧠 Agente de IA Local com RAG
 
-![Python](https://img.shields.io/badge/Python-3.13.12+-blue)
+![Python](https://img.shields.io/badge/Python-3.13.12-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-UI-red)
 ![LangChain](https://img.shields.io/badge/LangChain-RAG-green)
 ![ChromaDB](https://img.shields.io/badge/Chroma-VectorDB-purple)
