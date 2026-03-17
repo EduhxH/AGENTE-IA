@@ -94,14 +94,16 @@ cd RAG/gabarito
 streamlit run app.py
 
 ## ⚠️ Problemas Comuns
-## Banco não encontrado
+
+Banco não encontrado
 
 Verifique se existe:
 RAG/chroma_db
 Caso não exista:
 python criar_db.py
 
-Streamlit não encontra o app:
+Streamlit não encontra o app
+
 Execute:
 cd RAG/gabarito
 streamlit run app.py
