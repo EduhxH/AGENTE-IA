@@ -1,56 +1,146 @@
-🧠 Meu Agente de IA (Chat RAG Local)
-
-Criei este projeto como um laboratório pessoal. O meu principal objetivo foi mergulhar de cabeça no mundo dos LLMs (Large Language Models) e entender como o RAG (Retrieval-Augmented Generation) funciona na prática.
-Mais do que apenas um chat, este projeto foi a minha forma de aprender a conectar inteligência artificial com dados reais, mantendo tudo rodando localmente para entender cada etapa do processo — desde a vetorização de documentos até a interface final.
+🧠 Agente de IA Local com RAG
 
 
-✨ O que ele faz?
-
-Conversa com Contexto: Ele não chuta respostas; ele consulta a base de dados vetorial (ChromaDB) que eu criei.
-Interface de Chat: Usei o Streamlit pra criar uma experiência parecida com o ChatGPT, com histórico de mensagens e tudo mais.
-Privacidade Total: Como o "cérebro" é o Ollama (llama3.2), nada vai pra nuvem. Tudo fica na minha máquina.
 
 
-🛠️ O que tem "debaixo do capô"
-
-Streamlit: Pra interface web bonitona e fácil de usar.
-Ollama (llama3.2 & nomic-embed-text): Os modelos que pensam e processam os textos.
-LangChain + Chroma: A estrutura que conecta os PDFs à inteligência da IA.
 
 
-🚀 Como rodar aí na sua máquina
-
-Primeiro, você precisa ter o Ollama instalado e os modelos baixados (ollama pull llama3.2 e ollama pull nomic-embed-text).
-Instale as bibliotecas:
-bash
-pip install streamlit langchain langchain-chroma langchain-ollama
-Use o código com cuidado.
-
-Verifique a base de dados:
-Certifique-se de que a pasta RAG/chroma_db já existe com seus dados processados. O app vai te dar um erro amigável se não encontrar.
-Dê o play:
-bash
-streamlit run app.py
-Use o código com cuidado.
 
 
-📝 Notas:
 
-Este projeto foi um baita aprendizado sobre como unir uma interface web com modelos de linguagem locais. O próximo passo? Talvez colocar um botão pra fazer o upload de novos PDFs direto pela tela do chat! 🚀
 
-👍LEIA CASO TENHA PROBLEMAS:
 
-É comum que as vezes dê erro no streamlit, no qual o programa não executa pois não consegue achar o ficheiro app.py ou a pasta da db, para isso deve se seguir os seguintes passos:
 
-1- Acede à pasta do script:
-Navega até ao diretório onde o ficheiro principal está localizado:
+Um agente de IA com memória baseada em documentos, rodando 100% local. Sem nuvem. Sem atalhos. Só engenharia.
+
+🧩 Sobre o Projeto
+
+Este projeto é um laboratório prático para explorar LLMs locais e o padrão RAG (Retrieval-Augmented Generation).
+
+A ideia foi simples e ambiciosa ao mesmo tempo:
+criar um chat que não responde por adivinhação, mas sim consultando uma base de conhecimento construída a partir de documentos reais.
+
+Tudo roda localmente, permitindo entender cada etapa:
+
+📄 Ingestão de PDFs
+
+🔢 Vetorização de texto
+
+🧠 Busca semântica
+
+💬 Geração de resposta com contexto
+
+⚡ Como Funciona
+
+O fluxo da aplicação é quase como uma pequena máquina pensante:
+
+O utilizador faz uma pergunta
+
+O sistema busca trechos relevantes no ChromaDB
+
+Esses trechos viram o contexto do prompt
+
+O modelo llama3.2 (via Ollama) gera a resposta
+
+A resposta é exibida em tempo real (streaming)
+
+💡 Traduzindo:
+o modelo deixa de “inventar” e passa a consultar memória antes de falar
+
+✨ Funcionalidades
+
+🔍 Busca Semântica Inteligente
+Utiliza similarity_search para encontrar os trechos mais relevantes.
+
+🧠 Respostas com Contexto Real
+O prompt é enriquecido com dados da base vetorial.
+
+💬 Chat com Histórico
+Mantém estado da conversa com st.session_state.
+
+⚡ Streaming de Resposta
+A resposta aparece aos poucos, como num modelo real (efeito ChatGPT).
+
+🔒 Execução 100% Local
+Nenhum dado sai da máquina.
+
+🛠️ Stack Tecnológica
+
+Streamlit → Interface de chat
+
+LangChain → Orquestração do pipeline RAG
+
+ChromaDB → Base de dados vetorial persistente
+
+Ollama
+
+llama3.2 → Modelo de linguagem
+
+nomic-embed-text → Embeddings
+
+📁 Estrutura do Projeto
+RAG/
+│
+├── base/                  # PDFs utilizados
+├── chroma_db/             # Base vetorial persistida
+│
+├── gabarito/
+│   ├── app.py             # Interface + lógica do chat
+│   ├── criar_db.py        # Script para gerar embeddings
+│   └── .env
+│
+└── requirements.txt
+⚙️ Como Executar
+1️⃣ Instalar Ollama + modelos
+ollama pull llama3.2
+ollama pull nomic-embed-text
+2️⃣ Instalar dependências
+pip install -r requirements.txt
+3️⃣ Criar a base vetorial (se necessário)
+python criar_db.py
+4️⃣ Executar o app
 cd RAG/gabarito
-
-2- Inicia o Streamlit:
-Executa o comando abaixo para abrir a aplicação no teu navegador:
 streamlit run app.py
+⚠️ Problemas Comuns
+❌ Erro: banco não encontrado
 
-Nota: Certifica-te de que o terminal está na pasta correta (onde o app.py reside) para que as dependências e o banco de dados sejam carregados corretamente.
+Se aparecer:
+
+Erro: Banco de dados não encontrado.
+
+👉 Verifique se existe:
+
+RAG/chroma_db
+
+👉 Caso não exista, execute:
+
+python criar_db.py
+❌ Streamlit não encontra o app
+
+Certifique-se de estar na pasta correta:
+
+cd RAG/gabarito
+🧪 Melhorias Futuras
+
+📤 Upload de PDFs pela interface
+
+🧠 Memória de longo prazo entre sessões
+
+🎛️ Ajuste dinâmico de temperatura/modelo
+
+🌐 Deploy local com Docker
+
+📊 Visualização dos embeddings
+
+🎯 Aprendizados
+
+Este projeto explora na prática:
+
+Como ligar dados → contexto → resposta
+
+Diferença entre LLM puro vs RAG
+
+Funcionamento interno de um sistema de IA real
 
 <img width="787" height="383" alt="image" src="https://github.com/user-attachments/assets/ff6991ba-82fb-40fe-baf8-3c66d02ee3c6" /> 
 
