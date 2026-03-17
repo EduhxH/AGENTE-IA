@@ -38,7 +38,7 @@ Use o código com cuidado.
 
 Este projeto foi um baita aprendizado sobre como unir uma interface web com modelos de linguagem locais. O próximo passo? Talvez colocar um botão pra fazer o upload de novos PDFs direto pela tela do chat! 🚀
 
-👍LEIA CASO TENHAM PROBLEMAS:
+👍LEIA CASO TENHA PROBLEMAS:
 
 É comum que as vezes dê erro no streamlit, no qual o programa não executa pois não consegue achar o ficheiro app.py ou a pasta da db, para isso deve se seguir os seguintes passos:
 
