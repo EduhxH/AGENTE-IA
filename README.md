@@ -1,123 +1,181 @@
-# 🧠 Agente de IA Local com RAG
+<div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.13.12-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-UI-red)
-![LangChain](https://img.shields.io/badge/LangChain-RAG-green)
-![ChromaDB](https://img.shields.io/badge/Chroma-VectorDB-purple)
-![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM-black)
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+<img src="https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Streamlit-UI-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
+<img src="https://img.shields.io/badge/LangChain-RAG-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
+<img src="https://img.shields.io/badge/ChromaDB-VectorDB-7C3AED?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Ollama-Local%20LLM-000000?style=for-the-badge" />
+<img src="https://img.shields.io/badge/status-in%20development-yellow?style=for-the-badge" />
 
-> Um agente de IA com memória baseada em documentos, rodando 100% local. Sem nuvem. Sem atalhos. Só engenharia.
+<br/>
+<br/>
 
----
+# 🧠 Local AI Agent with RAG
 
-## 🧩 Sobre o Projeto
+**A document-aware AI agent running 100% locally.**  
+No cloud. No shortcuts. Just engineering.
 
-Este projeto é um laboratório prático para explorar LLMs locais e o padrão RAG (Retrieval-Augmented Generation).
+> ⚠️ **Note:** The source code, comments and variable names are written in **Portuguese (pt-BR)**, as this project was developed for study purposes in a Brazilian context.
 
-A ideia foi criar um chat que não responde por adivinhação, mas sim consultando uma base de conhecimento construída a partir de documentos reais.
+[How It Works](#-how-it-works) • [Features](#-features) • [Tech Stack](#-tech-stack) • [Getting Started](#-getting-started) • [Project Structure](#-project-structure)
 
-Tudo roda localmente, permitindo entender cada etapa:
-
-- Ingestão de PDFs  
-- Vetorização de texto  
-- Busca semântica  
-- Geração de resposta com contexto  
+</div>
 
 ---
 
-## ⚡ Como Funciona
+## 🧩 About the Project
 
-1. O utilizador faz uma pergunta  
-2. O sistema busca trechos relevantes no ChromaDB  
-3. Esses trechos viram o contexto do prompt  
-4. O modelo llama3.2 (via Ollama) gera a resposta  
-5. A resposta é exibida em tempo real (streaming)  
+This project is a hands-on laboratory for exploring local LLMs and the **RAG (Retrieval-Augmented Generation)** pattern.
 
----
+The goal was to build a chat that doesn't respond by guessing — but by consulting a knowledge base built from real documents.
 
-## ✨ Funcionalidades
+Everything runs locally, making it possible to understand each step of the pipeline:
 
-- Busca semântica inteligente  
-- Respostas com contexto real  
-- Chat com histórico  
-- Streaming de resposta  
-- Execução 100% local  
+- PDF ingestion
+- Text vectorization
+- Semantic search
+- Context-aware response generation
 
 ---
 
-## 🛠️ Stack Tecnológica
+## ⚡ How It Works
 
-- Streamlit (interface)  
-- LangChain (pipeline RAG)  
-- ChromaDB (base vetorial)  
-- Ollama  
-  - llama3.2 (LLM)  
-  - nomic-embed-text (embeddings)  
-
----
-
-## 📁 Estrutura do Projeto
-
-RAG/
-│
-├── base/
-├── chroma_db/
-│
-├── gabarito/
-│ ├── app.py
-│ ├── criar_db.py
-│ └── .env
-│
-└── requirements.txt
+```
+User question
+     ↓
+Semantic search in ChromaDB
+     ↓
+Relevant chunks become the prompt context
+     ↓
+llama3.2 (via Ollama) generates the response
+     ↓
+Answer streamed in real time to the UI
+```
 
 ---
 
-## ⚙️ Como Executar
+## ✨ Features
 
-### 1. Instalar Ollama + modelos
+- 🔍 **Intelligent semantic search** — finds the most relevant document chunks for each query
+- 📄 **Context-aware responses** — the model answers based on real document content, not hallucinations
+- 💬 **Chat with history** — conversation memory across turns
+- ⚡ **Response streaming** — token-by-token output for a natural feel
+- 🔒 **100% local execution** — no API keys, no cloud, full privacy
 
+---
+
+## 🛠 Tech Stack
+
+| Technology | Role |
+|---|---|
+| [Streamlit](https://streamlit.io/) | Web interface |
+| [LangChain](https://www.langchain.com/) | RAG pipeline orchestration |
+| [ChromaDB](https://www.trychroma.com/) | Vector database |
+| [Ollama](https://ollama.com/) — `llama3.2` | Local LLM for generation |
+| [Ollama](https://ollama.com/) — `nomic-embed-text` | Local embeddings model |
+
+---
+
+## 📦 Prerequisites
+
+- [Python 3.13+](https://www.python.org/)
+- [Ollama](https://ollama.com/) installed and running locally
+
+---
+
+## 🚀 Getting Started
+
+### 1. Pull the required models
+
+```bash
 ollama pull llama3.2
 ollama pull nomic-embed-text
+```
 
-## 2. Instalar dependências
+### 2. Install dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-## 3. Criar a base vetorial
+### 3. Build the vector database
 
+```bash
 python criar_db.py
+```
 
-## 4. Executar o app
+### 4. Run the app
 
+```bash
 cd RAG/gabarito
 streamlit run app.py
+```
 
-## ⚠️ Problemas Comuns
+> ✅ App running at `http://localhost:8501`
 
-Banco não encontrado
+---
 
-Verifique se existe:
-RAG/chroma_db
-Caso não exista:
+## 📁 Project Structure
+
+```
+RAG/
+│
+├── base/                   # Source documents (PDFs)
+├── chroma_db/              # Persisted vector database
+│
+├── gabarito/
+│   ├── app.py              # Streamlit interface & chat logic
+│   ├── criar_db.py         # PDF ingestion & vectorization script
+│   └── .env                # Environment variables
+│
+└── requirements.txt
+```
+
+---
+
+## ⚠️ Common Issues
+
+**Vector database not found**
+
+If you see an error about a missing database, make sure the `chroma_db/` folder exists:
+
+```bash
 python criar_db.py
+```
 
-Streamlit não encontra o app
+**Streamlit can't find the app**
 
-Execute:
+Always run from the correct directory:
+
+```bash
 cd RAG/gabarito
 streamlit run app.py
+```
 
-## 🧪 Melhorias Futuras
+---
 
-Upload de PDFs pela interface
-Memória persistente
-Ajuste de parâmetros do modelo
-Docker
-Visualização de embeddings
+## 🧠 What I Learned
 
-## 🎯 Aprendizados
+- How to build a full RAG pipeline from scratch
+- The difference between a pure LLM and a retrieval-augmented system
+- How vector databases store and retrieve semantic information
+- How to run open-source LLMs locally with Ollama
+- How to orchestrate AI pipelines with LangChain
 
-Integração entre dados e LLM
-Diferença entre LLM puro e RAG
-Construção de sistemas de IA locais
+---
+
+## 🔮 Future Improvements
+
+- [ ] PDF upload through the UI
+- [ ] Persistent memory across sessions
+- [ ] Model parameter tuning via interface
+- [ ] Dockerization
+- [ ] Embedding visualization dashboard
+
+---
+
+<div align="center">
+
+Made with 💜 by [EduhxH](https://github.com/EduhxH)
+
+</div>
