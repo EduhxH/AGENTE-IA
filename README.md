@@ -15,7 +15,7 @@
 **A document-aware AI agent running 100% locally.**  
 No cloud. No shortcuts. Just engineering.
 
-> ⚠️ **Note:** The source code, comments and variable names are written in **Portuguese (pt-BR)**, as this project was developed for study purposes in a Brazilian context.
+> ⚠️ **Note:** The source code, comments and variable names are written in **Portuguese (pt-BR)**, as this project was developed for study purposes in a Brazilian/Portuguese context.
 
 [How It Works](#-how-it-works) • [Features](#-features) • [Tech Stack](#-tech-stack) • [Getting Started](#-getting-started) • [Project Structure](#-project-structure)
 
