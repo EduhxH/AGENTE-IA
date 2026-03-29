@@ -1,0 +1,20 @@
+services:
+  rag:
+    build: .
+    container_name: rag_agente
+    ports:
+      - "8501:8501"
+    volumes:
+      # Persistência da base de dados e memória fora do container
+      - ./RAG/chroma_db:/app/RAG/chroma_db
+      - ./RAG/memory_db:/app/RAG/memory_db
+      - ./RAG/base:/app/RAG/base
+    environment:
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+      - CHROMA_PATH=RAG/chroma_db
+      - PASTA_BASE=RAG/base
+      - MEMORY_PATH=RAG/memory_db
+    extra_hosts:
+      # Permite acesso ao Ollama correndo no host (Linux)
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped

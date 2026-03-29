@@ -1,0 +1,212 @@
+[
+  {
+    "autor": "user",
+    "texto": "resuma o ficherio",
+    "timestamp": "2026-03-29T20:54:04.384011"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T20:54:04.893100"
+  },
+  {
+    "autor": "user",
+    "texto": "resuma",
+    "timestamp": "2026-03-29T20:54:12.954760"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T20:54:13.241818"
+  },
+  {
+    "autor": "user",
+    "texto": "olá",
+    "timestamp": "2026-03-29T20:54:16.318161"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T20:54:16.547746"
+  },
+  {
+    "autor": "user",
+    "texto": "existem gatos no documento?",
+    "timestamp": "2026-03-29T20:57:05.633890"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T20:57:06.157661"
+  },
+  {
+    "autor": "user",
+    "texto": "olá",
+    "timestamp": "2026-03-29T20:57:09.334595"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T20:57:09.566513"
+  },
+  {
+    "autor": "user",
+    "texto": "olá",
+    "timestamp": "2026-03-29T20:58:42.659582"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T20:58:42.945228"
+  },
+  {
+    "autor": "user",
+    "texto": "documento nome",
+    "timestamp": "2026-03-29T20:58:50.215575"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T20:58:50.605861"
+  },
+  {
+    "autor": "user",
+    "texto": "xdgdf",
+    "timestamp": "2026-03-29T21:04:34.419656"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T21:04:34.810591"
+  },
+  {
+    "autor": "user",
+    "texto": "olá",
+    "timestamp": "2026-03-29T21:19:12.513277"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T21:19:13.231884"
+  },
+  {
+    "autor": "user",
+    "texto": "documento",
+    "timestamp": "2026-03-29T21:19:19.014547"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T21:19:19.284986"
+  },
+  {
+    "autor": "user",
+    "texto": "nome do documento",
+    "timestamp": "2026-03-29T21:22:08.255596"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T21:22:08.671839"
+  },
+  {
+    "autor": "user",
+    "texto": "mande algo sobre o documento",
+    "timestamp": "2026-03-29T21:24:34.895771"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T21:24:35.485119"
+  },
+  {
+    "autor": "user",
+    "texto": "mande algo sobre o documento",
+    "timestamp": "2026-03-29T21:26:39.180955"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T21:26:39.896326"
+  },
+  {
+    "autor": "user",
+    "texto": "mande algo sobre o documento",
+    "timestamp": "2026-03-29T21:27:04.654282"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T21:27:05.356596"
+  },
+  {
+    "autor": "user",
+    "texto": "mande algo sobre o documento",
+    "timestamp": "2026-03-29T21:31:46.957593"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T21:31:47.576082"
+  },
+  {
+    "autor": "user",
+    "texto": "oi",
+    "timestamp": "2026-03-29T21:33:18.021748"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T21:33:18.326726"
+  },
+  {
+    "autor": "user",
+    "texto": "\"O que é moda?\"",
+    "timestamp": "2026-03-29T21:33:36.012172"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T21:33:36.538589"
+  },
+  {
+    "autor": "user",
+    "texto": "olá",
+    "timestamp": "2026-03-29T21:46:05.943197"
+  },
+  {
+    "autor": "user",
+    "texto": "olá",
+    "timestamp": "2026-03-29T21:53:42.195331"
+  },
+  {
+    "autor": "user",
+    "texto": "olá",
+    "timestamp": "2026-03-29T22:03:31.600647"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Olá! Como você está?",
+    "timestamp": "2026-03-29T22:04:17.795895"
+  },
+  {
+    "autor": "user",
+    "texto": "DIGA O NOME DE TODOS OS DOCUMENTOS",
+    "timestamp": "2026-03-29T22:04:31.972995"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Os nomes dos documentos são:\n\n1. Leiturade Ficheirosde TextoUsandoStreamReader\n2. EscritaemFicheirode TextousandoStreamWriter\n3. Agenda\n4. Escrevendoe Lendocom a ClasseFile",
+    "timestamp": "2026-03-29T22:05:05.382661"
+  },
+  {
+    "autor": "user",
+    "texto": "em qual linguagem seu sistema é feito?",
+    "timestamp": "2026-03-29T22:05:31.784225"
+  },
+  {
+    "autor": "assistant",
+    "texto": "Não encontrei informação relevante sobre esse tema no documento.",
+    "timestamp": "2026-03-29T22:05:32.832996"
+  }
+]
